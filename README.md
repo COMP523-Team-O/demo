@@ -7,6 +7,8 @@ npm start
 
 ## Back End
 `
->> pip install "fastapi[all]"
->> uvicorn main:app --reload
+pip install "fastapi[all]"
+`
+`
+uvicorn main:app --reload
 `
