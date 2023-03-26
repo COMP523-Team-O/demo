@@ -7,7 +7,6 @@ from fastapi.middleware.cors import CORSMiddleware
 # Currently using subprocess to gain the printed output from redditapi.py to get the JSON info
 output = subprocess.check_output(["python", "redditapi.py"])
 data = json.loads(output)
-print(data)
 
 app = FastAPI()
 
@@ -24,3 +23,7 @@ app.add_middleware(
 @app.get('/api/data')
 async def get_data():
     return data
+
+@app.get('/api/data/{id}')
+async def get_data(id : int):
+    return data[id]

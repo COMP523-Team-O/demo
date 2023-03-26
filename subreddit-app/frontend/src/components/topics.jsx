@@ -7,6 +7,7 @@ import {
   ListItemText,
   Divider,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export function Topics(props) {
   return (
@@ -19,7 +20,8 @@ export function Topics(props) {
             <List component="nav">
               {props.data.map((item, index) => {
                 return (
-                  <ListItem>
+                  
+                  <ListItem component={Link} to={`/post/${index}`}>
                     <ListItemText
                       primary={item.title}
                       secondary={"Posted by " + item.author}

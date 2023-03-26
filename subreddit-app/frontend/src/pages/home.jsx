@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import { Grid, List, ListItem } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Bar } from "../components/bar";
 import { Pulse } from "../components/pulse";
 import { Topics } from "../components/topics";

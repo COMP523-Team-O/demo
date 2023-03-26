@@ -1,6 +1,4 @@
-import { AppBar, Toolbar, Typography, InputBase } from "@mui/material";
-import { styled, alpha } from "@mui/material/styles";
-
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 export function Bar() {
   return (
@@ -15,7 +13,6 @@ export function Bar() {
           >
             cReddit Hours
           </Typography>
-          
         </Toolbar>
       </AppBar>
     </>
